@@ -15,7 +15,7 @@ int main() {
     }
 
     server_addr.sin_family = AF_INET;
-    server_addr.sin_addr.s_addr = inet_addr("127.0.0.1"); //server ip
+    server_addr.sin_addr.s_addr = inet_addr("192.168.179.136"); //server ip
     server_addr.sin_port = htons(8443);
 
     if (connect(client_fd, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1) {
